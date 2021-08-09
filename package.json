@@ -1,0 +1,17 @@
+{
+  "name": "calculadoradaw",
+  "version": "1.0.0",
+  "description": "Criação de uma calculadora para Desenvolvimento de Aplicações Web.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Calculadora"
+  ],
+  "author": "Lívia Klatte Rodrigues",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
