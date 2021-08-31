@@ -3,7 +3,7 @@ async function add (req, res)
 console.log (req.body);
 
 var numero1 = parseInt (req.body.numero1)
-var numero1 = parseInt (req.body.numero2)
+var numero2 = parseInt (req.body.numero2)
 var resultado;
 var calculadora = req.body.calculadora;
 
@@ -24,10 +24,10 @@ else if (calculadora == 'multiplicar')
 
 else if (calculadora == 'dividir')
 {
-    resultado = numerp1 / numero2;
+    resultado = numero1 / numero2;
 }
 
-res.render ("calculo/list.ejs", {result: result}
+res.render ("calculadora/list.ejs", {resultado: resultado}
 );
 
 
@@ -35,10 +35,7 @@ res.render ("calculo/list.ejs", {result: result}
 
 async function abreAdd (req, res) 
 {
-    res.render ("calculo/add.ejs", {});
+    res.render ("calculadora/add.ejs", {});
 }
- 
-module.exports = {
-     add,
-     abreAdd,
-}
+
+module.exports = {add, abreAdd};
